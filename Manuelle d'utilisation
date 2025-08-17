@@ -1,0 +1,88 @@
+# 📖 Manuel d’Utilisation – Système de Gestion de Playlists Musicales
+
+## 🚀 Lancement de l’application
+1. Vérifiez que **Java 17** est installé sur votre machine :
+   ```bash
+   java -version
+2. Compilez les fichiers Java :
+  javac src/fr/egocentrique/*.java
+3. Lancez le programme :
+  java fr.egocentrique.Main
+
+## 📋 Menu Principal
+1. code
+  ```
+    ======= MENU PRINCIPAL ========
+  1 - MORCEAU
+  2 - PLAYLISTS
+  3 - UTILISATEUR
+  4 - BIBLIOTHÈQUE MUSICALE
+  5 - LECTURE
+  0 - QUITTER
+👉 Choisissez un chiffre selon l’action voulue.
+
+## 🎼 Gestion des Morceaux
+  
+  1. Créer un morceau : saisissez titre, artiste, album, durée et genre.
+  
+  2. Afficher les morceaux : voir la liste de tous les morceaux disponibles.
+  
+  3. Rechercher un morceau : tapez un mot-clé (titre, artiste, genre).
+
+## 🎵 Gestion des Playlists
+
+  Créer une playlist : indiquez son nom et l’utilisateur propriétaire.
+  
+  Ajouter un morceau : choisissez un morceau existant et ajoutez-le à la playlist.
+  
+  Retirer un morceau : supprimez un morceau spécifique de la playlist.
+  
+  Afficher la playlist : voir tous les morceaux d’une playlist donnée.
+  
+  Durée totale : calcule la durée de tous les morceaux dans la playlist.
+  
+  Partager une playlist : associer une playlist à un autre utilisateur.
+
+## 👤 Gestion des Utilisateurs
+
+  Créer un utilisateur : donnez un nom.
+  
+  Lister les utilisateurs : voir tous les utilisateurs existants.
+
+## 📚 Bibliothèque Musicale
+
+  Ajouter un morceau : ajoute un morceau à la bibliothèque.
+  
+  Afficher les morceaux de la bibliothèque : lister tous les morceaux stockés.
+  
+  Rechercher un morceau : rechercher par titre, artiste ou genre.
+
+## 🎧 Lecture Musicale
+
+  Ajouter à la file d’attente : choisissez un morceau de la bibliothèque.
+  
+  Lire : démarre la lecture du premier morceau de la file.
+  
+  Pause : met en pause le morceau en cours.
+  
+  Suivant : passe au prochain morceau de la file.
+  
+  Afficher la file d’attente : voir tous les morceaux en attente de lecture.
+
+## 🛑 Quitter l’application
+
+  Tapez 0 depuis le menu principal pour sortir.
+
+## ✅ Conseils d’utilisation
+
+  Entrez toujours un nombre valide pour naviguer dans le menu.
+  
+  Les morceaux doivent être ajoutés dans la bibliothèque avant de les utiliser dans une playlist ou une file de lecture.
+  
+  Utilisez des titres exacts (ou presque exacts) pour retrouver vos morceaux.
+
+## En terme d'évolutivité 
+  Comme idée d'evolution on pourrait :
+  1. Utiliser une classe a part entière pour la gestion des Exception 
+  2. Utilisation de base de donnée pour le stockage des information des utilisateur 
+  3. Utilisation de fichier pour sauvegarder les playlists
